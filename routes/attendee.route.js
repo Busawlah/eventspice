@@ -9,6 +9,11 @@ router.post('/new-attendee', Auth, async(req, res) => {
     res.send(attendee)
 });
 
+router.post('/attendeetoevent/:eventId', Auth, async (req, res) => {
+    const attendee = await attendeeServices.attendeetoevent(req.params.eventId, [...req.body.attendeeIds])
+    res.send(attendee)
+});
+
 router.get('/all-attendees', Auth, async (req, res) => {
     const attendee = await attendeeServices.getAllAttendees()
     res.send(attendee)
