@@ -1,4 +1,4 @@
-# eventspice
+# Eventspice
 An event management system
 
 ## 
