@@ -15,14 +15,13 @@ Generate reports for each event with information about attendee count etc.
 2. Integrate MongoDB Atlas to your application. 
 
 3. As an admin, I want to be able to approve or reject events created  by users. If an event is rejected, the admin should provide a reason for the rejection, which will be sent to the user via email. I should be able to:
+  i. Log in to the platform.
 
-i. Log in to the platform.
+  ii. Approve or reject events.
 
-ii. Approve or reject events.
+  iii. Delete events that are no longer needed.
 
-iii. Delete events that are no longer needed.
-
-iv. View a list of all the registered attendees for each event.
+  iv. View a list of all the registered attendees for each event.
 
 4. Push your codes to GitHub, deploy your app on Render.com and attach the live link to your GitHub repository. 
 
@@ -39,7 +38,7 @@ iv. View a list of all the registered attendees for each event.
 
 ### Commands
 - Project Start
-  #npm start#
+  *npm start*
 
 ## 
 ### Here is the Render Live Link
