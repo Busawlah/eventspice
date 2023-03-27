@@ -1,13 +1,18 @@
 const mailer = require('nodemailer');
+const dotenv = require('dotenv');
+const path = require('path');
+
+dotenv.config({
+  path: path.join(__dirname, "../.env"),
+});
 
 // create reusable transporter object using the default SMTP transport
 let transporter = mailer.createTransport({
   host: "sandbox.smtp.mailtrap.io",
   port: 2525,
-  secure: false, // true for 465, false for other ports
   auth: {
-    user: '107178ad0ea3f1', // generated ethereal user
-    pass: 'e31fdfdb5bf40d', // generated ethereal password
+    user: process.env.EMAILUSERNAME, // generated ethereal user
+    pass: process.env.EMAILPASSWORD, // generated ethereal password
   },
 });
 

@@ -31,4 +31,15 @@ const AuthUser = (req, res, next) => {
     });
 }
 
-module.exports = AuthUser;
+// const AuthRole = (role) => {
+//     return (req, res, next) => {
+//         if (req.user.role == role) {
+//             res.status(401);
+//             return res.send('User not allowed!');
+//         }
+
+//         next()
+//     }
+// }
+
+module.exports = (AuthUser);

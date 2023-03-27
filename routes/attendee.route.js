@@ -34,4 +34,10 @@ router.delete('/delete-attendee/:attendeeId', Auth, async (req, res) => {
     res.send("This attendee has been deleted")
 });
 
+// router.delete('/:attendeeId', auth('eventManager'), validate(attendeeValidation.deleteAttendee), attendeeServices.deleteAttendee);
+// router.get('/', auth('eventManager'), attendeeServices.getAllAttendees);
+
+// router.get('/average', auth('eventManager'), attendeeController.averageAttendee);
+// router.get('/popular-event', auth('eventManager'), attendeeController.popularEvent);
+
 module.exports = router;

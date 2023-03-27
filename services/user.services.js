@@ -29,6 +29,14 @@ const login = async(email, password) => {
     return user
 }
 
+// const logout = async (refreshToken) => {
+//     const refreshTokenDoc = await Token.findOne({ token: refreshToken, type: tokenTypes.REFRESH, blacklisted: false });
+//     if (!refreshTokenDoc) {
+//       throw new Error(httpStatus.NOT_FOUND, 'Not found');
+//     }
+//     await refreshTokenDoc.remove();
+//   };
+
 module.exports = {
     register,
     getUserByEmail,
